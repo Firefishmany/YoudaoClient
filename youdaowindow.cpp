@@ -59,6 +59,8 @@ void YoudaoWindow::setHash (const QString &word, const QString &explain)
         lru.pop_front();
     }
 
+    lru.append(word);
+
     cache.insert(word, explain);
 }
 
